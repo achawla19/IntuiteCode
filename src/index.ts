@@ -44,7 +44,7 @@ app.post("/chat", async (req: Request, res: Response) => {
           Authorization: `Bearer ${GROQ_API_KEY}`,
         },
         body: JSON.stringify({
-          model: "llama-3.1-8b-instant",
+          model: "llama-3.3-70b-versatile",
           messages: [{ role: "system", content: systemPrompt }, ...messages],
           max_tokens: 200,
           temperature: 0.7,
